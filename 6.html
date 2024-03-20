@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tiffin Service</title>
+    <link rel="stylesheet" href="6.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#orders">Orders</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul id="menu-list"></ul>
+        </section>
+        <section id="orders" hidden>
+            <h2>Orders</h2>
+            <form id="order-form">
+                <label for="dish">Dish:</label>
+                <select id="dish"></select>
+                <label for="customization">Customization:</label>
+                <input type="text" id="customization" />
+                <button type="submit">Order</button>
+            </form>
+            <ul id="order-list"></ul>
+        </section>
+        <section id="reviews" hidden>
+            <h2>Reviews</h2>
+            <ul id="review-list"></ul>
+            <form id="review-form">
+                <label for="rating">Rating:</label>
+                <select id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+                <label for="review">Review:</label>
+                <textarea id="review"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="login" hidden>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" />
+                <label for="password">Password:</label>
+                <input type="password" id="password" />
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="register" hidden>
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" />
+                <label for="password">Password:</label>
+                <input type="password" id="password" />
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <script src="6.js"></script>
+</body>
+
+</html>
